@@ -49,8 +49,4 @@ python main.py --video data/sample.mp4 --output output/result.mp4 --yolo-weights
 - For consistent identity assignment over time, the system employs **appearance-based re-identification**:
   - Cropped player images are passed through a **ResNet-18** model to extract embeddings.
   - **Cosine similarity** is used to match current embeddings with a memory bank of past embeddings.
-- The approach works well under moderate conditions, even when players briefly leave the frame.
-- The project is modular, enabling:
-  - Replacement of the tracker with more advanced options like **Deep SORT** or **ByteTrack**.
-  - Integration of more robust embedding generators like **Vision Transformers (ViTs)** or **Siamese Networks**.
 
